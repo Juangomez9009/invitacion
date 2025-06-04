@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luisa & Juan Camilo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="overlay">
+    <h1>Luisa & Juan Camilo</h1>
+    <img src="juntos.png" alt="Luisa y Juan Camilo" class="foto-pareja" />
+    <h2>¡Nos vamos a casar!</h2>
+    <h3>Tenemos el honor de invitarte a nuestra boda</h3>
+
+    <div class="info">
+      <p>📅 <strong>02 de agosto de 2025</strong></p>
+      <div id="countdown-text" class="countdown-box">Cargando cuenta regresiva...</div>
+
+      <p>💒 Ceremonia:<br>Basilica Menor de Guasca – 4:00 p.m.</p>
+      <a class="button" href="https://maps.app.goo.gl/TBT7pgLMFZSieb1HA" target="_blank">Ver mapa ceremonia</a>
+
+      <p>🎉 Recepción:<br>Hacienda Valle Arriba, km 4 vía a La Calera – 6:00 p.m.</p>
+      <a class="button" href="https://www.google.com/maps?q=Hacienda+Valle+Arriba+La+Calera" target="_blank">Ver mapa recepción</a>
+
+      <h5>Adoramos a tus hijos menores de 10 años, pero creemos que ustedes necesitan una noche libre.</h5>
+      <h4>Agradecemos que confirmes tu asistencia antes del 05 de julio de 2025.</h4>  
+
+      <!-- Confirmación de asistencia -->
+      <div class="busqueda-box">
+        <h4>Confirma tu asistencia aquí</h4>
+
+        <label for="celular">Número de celular</label>
+        <input type="text" id="celular" placeholder="Ingresa tu número de celular" />
+        <button onclick="buscarInvitado()">Buscar invitado</button>
+      </div>
+
+      <div id="confirmacion-form" style="display: none;">
+        <p id="confirmacion-nombre"></p>
+
+        <label for="asistentes">¿Cuántas personas asistirán?</label>
+        <select id="asistentes"></select>
+
+        <label for="alergias">¿Tienes alguna restricción alimentaria o alergia?</label>
+        <input type="text" id="alergias" placeholder="Ej: Alergia al maní, sin lactosa..." />
+
+        <button onclick="confirmarAsistencia()">Confirmar asistencia</button>
+      </div>
+
+      <div id="rsvp-container" class="rsvp-box">
+        <p id="rsvp-message"></p>
+      </div>
+    </div>
+
+    <!-- Código de vestimenta -->
+    <div class="dress-code">
+      <h4>Código de vestimenta</h4>
+      <p>Vestido formal</p>
+      <p style="font-style: italic;">💚 Para los hombres: Nos reservamos el uso del color verde.</p>
+      <p style="font-style: italic;">🤍 Para las mujeres: Nos reservamos el uso del color blanco.</p>
+    </div>
+
+    <!-- Versículo -->
+    <div class="verse">
+      <p>"El amor es paciente, es bondadoso… todo lo espera, todo lo soporta. El amor jamás se extingue."</p>
+      <p>– 1 Corintios 13:4-8</p>
+    </div>
+  </div>
+
+  <!-- Modal de bienvenida -->
+  <div id="welcome-modal" class="modal">
+    <div class="modal-content">
+      <h2>¡Bienvenido!</h2>
+      <p>Gracias por acompañarnos.<br>Activa el sonido para sumergirte en esta experiencia 💖</p>
+      <button onclick="startExperience()">🎵 Activar sonido</button>
+    </div>
+  </div>
+
+  <!-- Música de fondo -->
+  <audio id="bg-music" loop>
+    <source src="romantic-piano.mp3" type="audio/mpeg">
+  </audio>
+
+  <button class="music-button" onclick="toggleMusic()">🔇 Silenciar música</button>
+
+  <!-- Script principal -->
+  <script src="script.js"></script>
+</body>
+</html>
