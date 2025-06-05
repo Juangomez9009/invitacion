@@ -35,19 +35,20 @@
         <button onclick="buscarInvitado()">Buscar invitado</button>
       </div>
 
-      <div id="confirmacion-form" style="display: none;">
-        <p id="confirmacion-nombre"></p>
+<div id="confirmacion-form" style="display: none;">
+  <p id="confirmacion-nombre"></p>
 
-        <label for="asistentes">¿Cuántas personas asistirán?</label>
-        <select id="asistentes"></select>
+  <label for="asistentes">¿Cuántas personas asistirán?</label>
+  <select id="asistentes"></select>
 
-        <label for="alergias">
-          ¿Tienes alguna restricción alimentaria o alergia?<br>
-          <small>Por favor indícanos el nombre de la persona y su restricción.</small>
-        </label>
+  <label for="alergias">
+    ¿Tienes alguna restricción alimentaria o alergia?<br>
+    <small>Por favor indícanos el nombre de la persona y su restricción.</small>
+  </label>
+  <input type="text" id="alergias" placeholder="Ej: Alergia al maní, sin lactosa..." />
 
-        <button onclick="confirmarAsistencia()">Confirmar asistencia</button>
-      </div>
+  <button onclick="confirmarAsistencia()">Confirmar asistencia</button>
+</div>
 
       <div id="rsvp-container" class="rsvp-box">
         <p id="rsvp-message"></p>
