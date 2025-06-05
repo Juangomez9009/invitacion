@@ -44,16 +44,20 @@ h1, h2, h4 {
   line-height: 1.6;
 }
 
-.button,
-.busqueda-box button {
-  background-color: #3b8167;
+.button {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 20px;
+  background-color: #1e4d3d; /* verde más oscuro */
   color: #fff;
+  text-decoration: none; /* quita el subrayado */
+  border-radius: 8px;
   font-weight: bold;
+  transition: background-color 0.3s;
 }
 
-.button:hover,
-.busqueda-box button:hover {
-  background-color: #4cae87;
+.button:hover {
+  background-color: #276a53; /* verde más intenso al pasar el mouse */
 }
 
 .music-button {
