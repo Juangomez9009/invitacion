@@ -5,10 +5,11 @@ body {
   background-size: cover;
   color: #fff;
   text-align: center;
+  font-style: italic; /* Aplicamos cursiva global */
 }
 
 .overlay {
-  background-color: rgba(0, 0, 0, 0.55);
+  background-color: rgba(0, 0, 0, 0.3);
   padding: 40px 20px;
   min-height: 100vh;
 }
@@ -17,11 +18,13 @@ h1 {
   font-size: 3em;
   margin-bottom: 10px;
   color: #cfe8dc;
+  font-style: normal; /* Se mantiene sin cursiva */
 }
 
 h2 {
   font-size: 1.5em;
   margin-bottom: 30px;
+  font-style: normal;
 }
 
 h1, h2, h4 {
@@ -29,7 +32,6 @@ h1, h2, h4 {
 }
 
 .verse {
-  font-style: italic;
   margin-top: 40px;
   color: #e0f2ea;
 }
@@ -40,20 +42,16 @@ h1, h2, h4 {
   line-height: 1.6;
 }
 
-.button {
-  display: inline-block;
-  margin: 10px;
-  padding: 12px 20px;
-  background-color: #2f5c4d;
+.button,
+.busqueda-box button {
+  background-color: #3b8167;
   color: #fff;
-  text-decoration: none;
-  border-radius: 8px;
   font-weight: bold;
-  transition: background-color 0.3s;
 }
 
-.button:hover {
-  background-color: #3e7b65;
+.button:hover,
+.busqueda-box button:hover {
+  background-color: #4cae87;
 }
 
 .music-button {
@@ -96,7 +94,7 @@ h1, h2, h4 {
   text-align: center;
   width: 80%;
   max-width: 400px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 .modal-content button {
@@ -160,12 +158,27 @@ h1, h2, h4 {
   cursor: pointer;
 }
 
+/* Ajustes para formulario de confirmación */
+#confirmacion-form {
+  margin-top: 30px;
+}
+
+#asistentes,
+#alergias {
+  padding: 10px;
+  font-size: 16px;
+  margin: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  max-width: 200px;
+}
+
 .foto-pareja {
   display: block;
   margin: 20px auto;
   max-width: 220px;
   border-radius: 12px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
 }
 
 .dress-code {
@@ -185,10 +198,11 @@ h1, h2, h4 {
 }
 
 @media (max-width: 600px) {
-  h1 {
-    font-size: 2em;
-  }
-  h2 {
-    font-size: 1.2em;
+  h1 { font-size: 2em; }
+  h2 { font-size: 1.2em; }
+  #asistentes,
+  #alergias {
+    width: 80%;
+    font-size: 18px;
   }
 }
