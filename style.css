@@ -240,4 +240,14 @@ h1, h2, h4 {
   display: inline-block;
   margin-bottom: 5px;
 }
+  .lluvia-sobres {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 1.2em;
+  font-style: italic;
+  color: #fff8dc; /* tono cálido claro */
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 10px;
+  border-radius: 10px;
+}
 }
