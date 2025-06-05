@@ -262,4 +262,13 @@ h1, h2, h4 {
     width: 90%;
     font-size: 18px;
   }
+
+/* ------------------- LogoBoda ------------------- */  
+.logo-boda {
+  display: block;
+  margin: 30px auto;
+  max-width: 200px;
+  height: auto;
+  opacity: 0.85;
+} 
 }
