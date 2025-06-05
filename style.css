@@ -5,11 +5,10 @@ body {
   background-size: cover;
   color: #fff;
   text-align: center;
-  font-style: italic; /* Aplicamos cursiva global */
 }
 
 .overlay {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.5); /* Más claridad */
   padding: 40px 20px;
   min-height: 100vh;
 }
@@ -18,13 +17,16 @@ h1 {
   font-size: 3em;
   margin-bottom: 10px;
   color: #cfe8dc;
-  font-style: normal; /* Se mantiene sin cursiva */
+  font-style: normal; /* No cursiva para nombres */
+}
+
+h2, h4, h5, p, .info {
+  font-style: italic;
 }
 
 h2 {
   font-size: 1.5em;
   margin-bottom: 30px;
-  font-style: normal;
 }
 
 h1, h2, h4 {
@@ -66,10 +68,6 @@ h1, h2, h4 {
   font-size: 16px;
   cursor: pointer;
   z-index: 999;
-}
-
-.music-button:hover {
-  background-color: #3e7b65;
 }
 
 .modal {
@@ -170,14 +168,15 @@ h1, h2, h4 {
   margin: 10px;
   border-radius: 8px;
   border: 1px solid #ccc;
-  max-width: 200px;
+  max-width: 220px;
 }
 
+/* Imagen circular */
 .foto-pareja {
   display: block;
   margin: 20px auto;
   max-width: 220px;
-  border-radius: 12px;
+  border-radius: 50%;
   box-shadow: 0 0 15px rgba(0,0,0,0.3);
 }
 
@@ -200,6 +199,7 @@ h1, h2, h4 {
 @media (max-width: 600px) {
   h1 { font-size: 2em; }
   h2 { font-size: 1.2em; }
+
   #asistentes,
   #alergias {
     width: 80%;
