@@ -250,4 +250,16 @@ h1, h2, h4 {
   padding: 10px;
   border-radius: 10px;
 }
+  .sobre-box {
+  margin: 40px auto 20px;
+  padding: 15px 20px;
+  max-width: 320px;
+  background-color: rgba(255, 215, 0, 0.15); /* dorado suave */
+  color: #fff8dc; /* blanco dorado */
+  font-weight: bold;
+  font-style: italic;
+  border-radius: 12px;
+  border: 1px solid #ffd700;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.4);
+}
 }
