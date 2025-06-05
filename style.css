@@ -215,16 +215,15 @@ h1, h2, h4 {
 
 /* ------------------- LLUVIA DE SOBRES ------------------- */
 .sobre-box {
-  margin: 40px auto 20px;
-  padding: 15px 20px;
-  max-width: 340px;
-  background-color: rgba(255, 215, 0, 0.15);
+  margin: 30px auto 20px;
+  padding: 15px 25px;
+  max-width: 600px;
+  background-color: rgba(255, 223, 100, 0.1); /* dorado suave y más tenue */
   color: #fff8dc;
   font-weight: bold;
   font-style: italic;
-  border-radius: 12px;
-  border: 1px solid #ffd700;
-  box-shadow: 0 0 10px rgba(255, 215, 0, 0.4);
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(255, 223, 100, 0.3); /* sombra dorada suave */
 }
 
 /* ------------------- VESTUARIO ------------------- */
