@@ -8,7 +8,7 @@ body {
 }
 
 .overlay {
-  background-color: rgba(0, 0, 0, 0.5); /* Más claridad */
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 40px 20px;
   min-height: 100vh;
 }
@@ -17,11 +17,15 @@ h1 {
   font-size: 3em;
   margin-bottom: 10px;
   color: #cfe8dc;
-  font-style: normal; /* No cursiva para nombres */
+  font-style: normal;
 }
 
-h2, h4, h5, p, .info {
+h2, h4, h5 {
   font-style: italic;
+}
+
+p, .info {
+  font-style: normal;
 }
 
 h2 {
@@ -36,6 +40,7 @@ h1, h2, h4 {
 .verse {
   margin-top: 40px;
   color: #e0f2ea;
+  font-style: italic;
 }
 
 .info {
@@ -48,16 +53,16 @@ h1, h2, h4 {
   display: inline-block;
   margin: 10px;
   padding: 12px 20px;
-  background-color: #1e4d3d; /* verde más oscuro */
+  background-color: #1e4d3d;
   color: #fff;
-  text-decoration: none; /* quita el subrayado */
+  text-decoration: none;
   border-radius: 8px;
   font-weight: bold;
   transition: background-color 0.3s;
 }
 
 .button:hover {
-  background-color: #276a53; /* verde más intenso al pasar el mouse */
+  background-color: #276a53;
 }
 
 .music-button {
@@ -160,7 +165,7 @@ h1, h2, h4 {
   cursor: pointer;
 }
 
-/* Ajustes para formulario de confirmación */
+/* ------------------- CONFIRMACIÓN ------------------- */
 #confirmacion-form {
   margin-top: 30px;
 }
@@ -169,13 +174,32 @@ h1, h2, h4 {
 #alergias {
   padding: 10px;
   font-size: 16px;
-  margin: 10px;
+  margin: 10px auto;
   border-radius: 8px;
   border: 1px solid #ccc;
-  max-width: 220px;
+  width: 100%;
+  max-width: 300px;
+  display: block;
+  box-sizing: border-box;
 }
 
-/* Imagen circular */
+#confirmacion-form button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #1e4d3d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#confirmacion-form button:hover {
+  background-color: #276a53;
+}
+
+/* ------------------- IMAGEN ------------------- */
 .foto-pareja {
   display: block;
   margin: 20px auto;
@@ -184,6 +208,7 @@ h1, h2, h4 {
   box-shadow: 0 0 15px rgba(0,0,0,0.3);
 }
 
+/* ------------------- VESTUARIO ------------------- */
 .dress-code {
   text-align: center;
   margin-top: 30px;
@@ -200,13 +225,14 @@ h1, h2, h4 {
   color: #ffe4b5;
 }
 
+/* ------------------- RESPONSIVE ------------------- */
 @media (max-width: 600px) {
   h1 { font-size: 2em; }
   h2 { font-size: 1.2em; }
 
   #asistentes,
   #alergias {
-    width: 80%;
+    width: 90%;
     font-size: 18px;
   }
 }
