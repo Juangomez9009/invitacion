@@ -13,6 +13,7 @@ body {
   min-height: 100vh;
 }
 
+/* ------------------- TIPOGRAFÍA ------------------- */
 h1 {
   font-size: 3em;
   margin-bottom: 10px;
@@ -49,6 +50,7 @@ h1, h2, h4 {
   line-height: 1.6;
 }
 
+/* ------------------- BOTONES ------------------- */
 .button {
   display: inline-block;
   margin: 10px;
@@ -79,6 +81,7 @@ h1, h2, h4 {
   z-index: 999;
 }
 
+/* ------------------- MODAL ------------------- */
 .modal {
   position: fixed;
   z-index: 1000;
@@ -115,6 +118,7 @@ h1, h2, h4 {
   cursor: pointer;
 }
 
+/* ------------------- CUENTA REGRESIVA ------------------- */
 .countdown-box {
   margin-top: 10px;
   font-size: 1.1em;
@@ -127,6 +131,7 @@ h1, h2, h4 {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
+/* ------------------- RSVP ------------------- */
 .rsvp-box {
   margin-top: 40px;
   padding: 20px;
@@ -136,6 +141,7 @@ h1, h2, h4 {
   text-align: center;
 }
 
+/* ------------------- BÚSQUEDA INVITADO ------------------- */
 .busqueda-box {
   margin-top: 30px;
   text-align: center;
@@ -207,6 +213,20 @@ h1, h2, h4 {
   box-shadow: 0 0 15px rgba(0,0,0,0.3);
 }
 
+/* ------------------- LLUVIA DE SOBRES ------------------- */
+.sobre-box {
+  margin: 40px auto 20px;
+  padding: 15px 20px;
+  max-width: 340px;
+  background-color: rgba(255, 215, 0, 0.15);
+  color: #fff8dc;
+  font-weight: bold;
+  font-style: italic;
+  border-radius: 12px;
+  border: 1px solid #ffd700;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.4);
+}
+
 /* ------------------- VESTUARIO ------------------- */
 .dress-code {
   text-align: center;
@@ -224,6 +244,15 @@ h1, h2, h4 {
   color: #ffe4b5;
 }
 
+/* ------------------- SUBTÍTULOS ------------------- */
+.subtitulo {
+  font-size: 1.4em;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 5px;
+  font-style: italic;
+}
+
 /* ------------------- RESPONSIVE ------------------- */
 @media (max-width: 600px) {
   h1 { font-size: 2em; }
@@ -234,32 +263,4 @@ h1, h2, h4 {
     width: 90%;
     font-size: 18px;
   }
-  .subtitulo {
-  font-size: 1.4em;
-  font-weight: bold;
-  display: inline-block;
-  margin-bottom: 5px;
-}
-  .lluvia-sobres {
-  margin-top: 40px;
-  margin-bottom: 20px;
-  font-size: 1.2em;
-  font-style: italic;
-  color: #fff8dc; /* tono cálido claro */
-  background-color: rgba(255, 255, 255, 0.05);
-  padding: 10px;
-  border-radius: 10px;
-}
-  .sobre-box {
-  margin: 40px auto 20px;
-  padding: 15px 20px;
-  max-width: 320px;
-  background-color: rgba(255, 215, 0, 0.15); /* dorado suave */
-  color: #fff8dc; /* blanco dorado */
-  font-weight: bold;
-  font-style: italic;
-  border-radius: 12px;
-  border: 1px solid #ffd700;
-  box-shadow: 0 0 10px rgba(255, 215, 0, 0.4);
-}
 }
