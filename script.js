@@ -39,7 +39,7 @@ function updateCountdown() {
   const minutes = Math.floor((diff / (1000 * 60)) % 60);
   const seconds = Math.floor((diff / 1000) % 60);
 
-  countdownElement.textContent = `Faltan ${days} días, ${hours}h ${minutes}m ${seconds}s 💍`;
+  countdownElement.textContent = `${days} días, ${hours}h ${minutes}m ${seconds}s 💍`;
   setTimeout(updateCountdown, 1000);
 }
 
