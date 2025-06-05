@@ -234,4 +234,10 @@ h1, h2, h4 {
     width: 90%;
     font-size: 18px;
   }
+  .subtitulo {
+  font-size: 1.4em;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 5px;
+}
 }
