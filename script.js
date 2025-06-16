@@ -6,13 +6,15 @@ let isMuted = false;
 let hasStarted = false;
 
 function startExperience() {
-  document.getElementById("welcome-modal").style.display = "none";
+  music.muted = false;
   music.play().then(() => {
     hasStarted = true;
     isMuted = false;
     button.textContent = "🔇 Silenciar música";
+    document.getElementById("welcome-modal").style.display = "none";
   }).catch((e) => {
     console.warn("Autoplay fallido:", e);
+    document.getElementById("welcome-modal").style.display = "none";
   });
 }
 
@@ -95,7 +97,6 @@ function confirmarAsistencia() {
   const transporte = document.getElementById("transporte").value;
   const alergias = document.getElementById("alergias").value.trim();
 
-  // Validación adicional para el campo de transporte
   if (transporte === "") {
     alert("Por favor indica si requieres transporte.");
     return;
@@ -121,5 +122,4 @@ function confirmarAsistencia() {
     console.error("❌ Error en confirmación:", error);
     alert("Hubo un problema al registrar tu asistencia. Intenta nuevamente.");
   });
-}
 }
