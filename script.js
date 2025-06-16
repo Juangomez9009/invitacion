@@ -92,6 +92,12 @@ function confirmarAsistencia() {
   const transporte = document.getElementById("transporte").value;
   const alergias = document.getElementById("alergias").value.trim();
 
+  // Validación adicional para el campo de transporte
+  if (transporte === "") {
+    alert("Por favor indica si requieres transporte.");
+    return;
+  }
+
   const formData = new FormData();
   formData.append("celular", celular);
   formData.append("asistentes", asistentes);
@@ -112,4 +118,5 @@ function confirmarAsistencia() {
     console.error("❌ Error en confirmación:", error);
     alert("Hubo un problema al registrar tu asistencia. Intenta nuevamente.");
   });
+}
 }
