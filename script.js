@@ -112,7 +112,7 @@ function confirmarAsistencia() {
   formData.append("fecha", new Date().toLocaleString());
   
 
-  fetch("https://script.google.com/macros/s/AKfycbxK_OQ-oBd71Y4zm2Fhvy1TdUOxxHImsQ8lt7hFgbqWCx358ZkdgSq_RhW12bKQdHUgGA/exec", {
+  fetch("https://script.google.com/macros/s/AKfycbxNbg4gXFey8ghJhc8svEZQGzLfxRFpbX7nBOSgBr9RV4rSfp2FbS_yUgXDflk9oPLAfQ/exec", {
     method: "POST",
     body: formData
   })
