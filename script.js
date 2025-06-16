@@ -6,11 +6,14 @@ let isMuted = false;
 let hasStarted = false;
 
 function startExperience() {
-  music.play().catch((e) => console.warn("Autoplay fallido:", e));
-  hasStarted = true;
-  isMuted = false;
   document.getElementById("welcome-modal").style.display = "none";
-  button.textContent = "🔇 Silenciar música";
+  music.play().then(() => {
+    hasStarted = true;
+    isMuted = false;
+    button.textContent = "🔇 Silenciar música";
+  }).catch((e) => {
+    console.warn("Autoplay fallido:", e);
+  });
 }
 
 function toggleMusic() {
