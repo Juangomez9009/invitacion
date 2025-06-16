@@ -96,6 +96,7 @@ function confirmarAsistencia() {
   const asistentes = document.getElementById("asistentes").value;
   const transporte = document.getElementById("transporte").value;
   const alergias = document.getElementById("alergias").value.trim();
+  const canciones = document.getElementById("canciones").value.trim();
 
   if (transporte === "") {
     alert("Por favor indica si requieres transporte.");
@@ -107,7 +108,9 @@ function confirmarAsistencia() {
   formData.append("asistentes", asistentes);
   formData.append("transporte", transporte);
   formData.append("alergias", alergias);
+  formData.append("canciones", canciones);
   formData.append("fecha", new Date().toLocaleString());
+  
 
   fetch("https://script.google.com/macros/s/AKfycbxK_OQ-oBd71Y4zm2Fhvy1TdUOxxHImsQ8lt7hFgbqWCx358ZkdgSq_RhW12bKQdHUgGA/exec", {
     method: "POST",
