@@ -200,3 +200,13 @@ select {
   h1 { font-size: 2em; }
   h2 { font-size: 1.2em; }
 }
+.foto-pareja {
+  display: block;
+  margin: 30px auto 20px;
+  width: 35%;
+  max-width: 300px;
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+  border: 5px solid #fff;
+  background-color: #fff;
+}
