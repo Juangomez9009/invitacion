@@ -1,10 +1,5 @@
 body {
-  margin: 0;
-  font-family: 'Oranienbaum', serif;
-  background: url('wooden.jpg') no-repeat center center fixed;
-  background-size: cover;
-  color: #fff;
-  text-align: center;
+  font-family: 'Raleway', sans-serif;
 }
 
 .overlay {
@@ -15,20 +10,13 @@ body {
 
 /* ------------------- TIPOGRAFÍA ------------------- */
 h1 {
-  font-family: 'Playfair Display', serif;
+  font-weight: 700;
   font-size: 3em;
-  margin-bottom: 10px;
-  color: #cfe8dc;
-  font-style: italic;
+  letter-spacing: 1px;
 }
 
 h2, h4, h5 {
-  font-family: 'Oranienbaum', serif;
-  font-style: italic;
-}
-
-p, .info {
-  font-family: 'Oranienbaum', serif;
+  font-weight: 400;
   font-style: normal;
 }
 
