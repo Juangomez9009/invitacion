@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: 'Georgia', serif;
+  font-family: 'Oranienbaum', serif;
   background: url('wooden.jpg') no-repeat center center fixed;
   background-size: cover;
   color: #fff;
@@ -15,6 +15,7 @@ body {
 
 /* ------------------- TIPOGRAFÍA ------------------- */
 h1 {
+  font-family: 'Playfair Display', serif;
   font-size: 3em;
   margin-bottom: 10px;
   color: #cfe8dc;
@@ -22,10 +23,12 @@ h1 {
 }
 
 h2, h4, h5 {
+  font-family: 'Oranienbaum', serif;
   font-style: italic;
 }
 
 p, .info {
+  font-family: 'Oranienbaum', serif;
   font-style: normal;
 }
 
