@@ -1,5 +1,11 @@
+/* ------------------- GENERAL ------------------- */
 body {
+  margin: 0;
   font-family: 'Raleway', sans-serif;
+  background: url('wooden.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
 }
 
 .overlay {
@@ -8,37 +14,31 @@ body {
   min-height: 100vh;
 }
 
-/* ------------------- TIPOGRAFÍA ------------------- */
+/* ------------------- TITULOS ------------------- */
 h1 {
   font-weight: 700;
   font-size: 3em;
   letter-spacing: 1px;
+  margin-top: 0;
+  color: #cfe8dc;
 }
 
-h2, h4, h5 {
+h2, h3, h4, h5 {
   font-weight: 400;
+  margin: 20px 0 10px;
+}
+
+p, .info {
+  font-weight: 300;
   font-style: normal;
 }
 
-h2 {
-  font-size: 1.5em;
-  margin-bottom: 30px;
-}
-
-h1, h2, h4 {
-  margin-top: 10px;
-}
-
+/* ------------------- FRASE BÍBLICA ------------------- */
 .verse {
   margin-top: 40px;
   color: #e0f2ea;
+  font-weight: 300;
   font-style: italic;
-}
-
-.info {
-  margin: 20px 0;
-  font-size: 1.2em;
-  line-height: 1.6;
 }
 
 /* ------------------- BOTONES ------------------- */
@@ -50,7 +50,7 @@ h1, h2, h4 {
   color: #fff;
   text-decoration: none;
   border-radius: 8px;
-  font-weight: bold;
+  font-weight: 600;
   transition: background-color 0.3s;
 }
 
@@ -76,10 +76,8 @@ h1, h2, h4 {
 .modal {
   position: fixed;
   z-index: 1000;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.8);
   display: flex;
@@ -113,97 +111,49 @@ h1, h2, h4 {
 .countdown-box {
   margin-top: 10px;
   font-size: 1.1em;
-  font-weight: bold;
-  color: #ffffff;
+  font-weight: 600;
   background-color: rgba(255, 255, 255, 0.1);
   padding: 10px 20px;
   border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
   display: inline-block;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-/* ------------------- RSVP ------------------- */
-.rsvp-box {
-  margin-top: 40px;
-  padding: 20px;
-  background-color: rgba(255, 255, 255, 0.1);
-  color: #fff;
-  border-radius: 10px;
-  text-align: center;
-}
-
-/* ------------------- BÚSQUEDA INVITADO ------------------- */
-.busqueda-box {
+/* ------------------- FORMULARIOS ------------------- */
+.busqueda-box, #confirmacion-form {
   margin-top: 30px;
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.1);
   padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 12px;
 }
 
-.busqueda-box input {
-  padding: 10px;
-  width: 60%;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  margin-bottom: 10px;
-  font-size: 16px;
-}
-
-.busqueda-box button {
-  display: block;
-  margin: 0 auto;
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #225e4d;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-/* ------------------- CONFIRMACIÓN ------------------- */
-#confirmacion-form {
-  margin-top: 30px;
-}
-
-#asistentes,
-#transporte,
-#alergias,
-#canciones {
+input[type="text"],
+select {
   padding: 10px;
   font-size: 16px;
   margin: 10px auto;
   border-radius: 8px;
   border: 1px solid #ccc;
-  width: 100%;
+  width: 90%;
   max-width: 300px;
-  display: block;
   box-sizing: border-box;
+  display: block;
 }
 
-#confirmacion-form button {
+.busqueda-box button, #confirmacion-form button {
   margin-top: 15px;
   padding: 10px 20px;
-  background-color: #1e4d3d;
+  background-color: #225e4d;
   color: white;
   border: none;
   border-radius: 8px;
   font-size: 16px;
+  font-weight: 600;
   cursor: pointer;
 }
 
-#confirmacion-form button:hover {
+.busqueda-box button:hover, #confirmacion-form button:hover {
   background-color: #276a53;
-}
-
-/* ------------------- IMAGEN ------------------- */
-.foto-pareja {
-  display: block;
-  margin: 20px auto;
-  max-width: 220px;
-  border-radius: 50%;
-  box-shadow: 0 0 15px rgba(0,0,0,0.3);
 }
 
 /* ------------------- LLUVIA DE SOBRES ------------------- */
@@ -211,12 +161,12 @@ h1, h2, h4 {
   margin: 30px auto 20px;
   padding: 15px 25px;
   max-width: 600px;
-  background-color: rgba(255, 223, 100, 0.1); /* dorado suave y más tenue */
+  background-color: rgba(255, 223, 100, 0.1);
   color: #fff8dc;
   font-weight: bold;
-  font-style: italic;
   border-radius: 10px;
-  box-shadow: 0 0 8px rgba(255, 223, 100, 0.3); /* sombra dorada suave */
+  box-shadow: 0 0 8px rgba(255, 223, 100, 0.3);
+  font-style: italic;
 }
 
 /* ------------------- VESTUARIO ------------------- */
@@ -227,7 +177,6 @@ h1, h2, h4 {
   background-color: rgba(0, 0, 0, 0.4);
   padding: 15px;
   border-radius: 10px;
-  font-family: 'Georgia', serif;
 }
 
 .dress-code h4 {
@@ -236,33 +185,18 @@ h1, h2, h4 {
   color: #ffe4b5;
 }
 
-/* ------------------- SUBTÍTULOS ------------------- */
-.subtitulo {
-  font-size: 1.4em;
-  font-weight: bold;
-  display: inline-block;
-  margin-bottom: 5px;
-  font-style: italic;
-}
-
-/* ------------------- RESPONSIVE ------------------- */
-@media (max-width: 600px) {
-  h1 { font-size: 2em; }
-  h2 { font-size: 1.2em; }
-
-  #asistentes,
-  #alergias {
-    width: 90%;
-    font-size: 18px;
-  }
-
-/* ------------------- LogoBoda ------------------- */  
+/* ------------------- LOGO ------------------- */
 .logo-boda {
   display: block;
   margin: 20px auto 10px;
   max-width: 160px;
   width: 30%;
   opacity: 0.9;
-  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.3));  
-} 
+  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.3));
+}
+
+/* ------------------- RESPONSIVE ------------------- */
+@media (max-width: 600px) {
+  h1 { font-size: 2em; }
+  h2 { font-size: 1.2em; }
 }
