@@ -103,6 +103,10 @@ function confirmarAsistencia() {
     return;
   }
 
+  const boton = document.querySelector("#confirmacion-form button");
+  boton.disabled = true;
+  boton.textContent = "Enviando...";
+
   const formData = new FormData();
   formData.append("celular", celular);
   formData.append("asistentes", asistentes);
@@ -110,7 +114,6 @@ function confirmarAsistencia() {
   formData.append("alergias", alergias);
   formData.append("canciones", canciones);
   formData.append("fecha", new Date().toLocaleString());
-  
 
   fetch("https://script.google.com/macros/s/AKfycbxNbg4gXFey8ghJhc8svEZQGzLfxRFpbX7nBOSgBr9RV4rSfp2FbS_yUgXDflk9oPLAfQ/exec", {
     method: "POST",
@@ -124,5 +127,10 @@ function confirmarAsistencia() {
   .catch(error => {
     console.error("❌ Error en confirmación:", error);
     alert("Hubo un problema al registrar tu asistencia. Intenta nuevamente.");
+  })
+  .finally(() => {
+    boton.disabled = false;
+    boton.textContent = "Confirmar asistencia";
   });
 }
+
